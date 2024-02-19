@@ -28,5 +28,6 @@ throw new Error('Method not implemented.');
 
 category: Category[] = [
   {value: 'food-0', viewValue: 'Essen'},
+  {value: 'cars-0', viewValue: 'Autos'},
 ];
 }
