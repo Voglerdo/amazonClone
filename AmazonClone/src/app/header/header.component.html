@@ -1,0 +1,20 @@
+<mat-toolbar>
+    <span>Logo Placeholder </span>
+
+    <section>
+        <form>
+            <mat-form-field>
+                <mat-label>Favorite food</mat-label>
+                <mat-select>
+                  @for (category of category; track category) {
+                    <mat-option [value]="category.value">{{category.viewValue}}</mat-option>
+                  }
+                </mat-select>
+              </mat-form-field>
+              
+
+          <input type="text" placeholder="Suche Amazon.de" #filter>
+          <button class="primary" type="button" (click)="filterResults(filter.value)">Search</button>
+        </form>
+      </section>
+  </mat-toolbar>
